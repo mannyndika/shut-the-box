@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SHUT THE BOX</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="./game.js" defer></script>
+    </head>
+    <body id="body">
+        <div class="header">
+            <h1 id="roundTit"></h1>
+        <h1 id="title">SHUT THE BOX</h1>
+    </div>
+    <div id="winnerSection">
+        <h1 id="winner">Winner: <span><h1 id="winnerName"></h1></span></h1>
+      </div>
+        <div class="player-names">
+        <form id="player-inputs">
+            <input type="text" id="p1-name" placeholder="Player One"></input>
+            <input type="text" id="p2-name" placeholder="Player Two"></input>
+        </form>
+    </div>
+        <button id="start-game">START GAME</button>
+        <div class="game-board">
+            <div class="box1 open" id="b1">1</div>
+            <div class="box2 open" id="b2">2</div>
+            <div class="box3 open" id="b3">3</div>
+            <div class="box4 open" id="b4">4</div>
+            <div class="box5 open" id="b5">5</div>
+            <div class="box6 open" id="b6">6</div>
+            <div class="box7 open" id="b7">7</div>
+            <div class="box8 open" id="b8">8</div>
+            <div class="box9 open" id="b9">9</div>
+        </div>
+        <div class="bottom-stuff">
+            <i class="bi bi-dice-3" id="die1"></i>
+            <i class="bi bi-dice-3"id="die2"></i>
+            <button id="roll-btn" disabled>Roll</button>
+            <button id="individual-btn" disabled>Individual</button>
+            <button id="sum-btn" disabled>Sum</button>
+            <button id="end-btn" disabled>End Turn</button>
+        </div>
+    </body>
+</html>
